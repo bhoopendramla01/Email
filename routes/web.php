@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get("/",[EmailController::class,"index"])->name("index");
+Route::get("/",[EmailController::class,"create"])->name("create");
+// Route::get("/",[EmailController::class,"index"])->name("index");
+Route::post("/store",[EmailController::class,"store"])->name("store");
