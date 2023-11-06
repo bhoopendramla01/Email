@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Mail;
-
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
 
 class EmailController extends Controller
@@ -16,4 +16,17 @@ class EmailController extends Controller
             $message->subject('Hello Email Verification');
         });
     }
+
+    // public function indexv1()
+    // {
+        
+    //     $mailData = [
+    //         'title' => 'Mail from ItSolutionStuff.com',
+    //         'body' => 'This is for testing email using smtp.'
+    //     ];
+         
+    //     Mail::to('naresh.dollop@gmail.com')->send(new SendMail($mailData));
+           
+    //     dd("Email is sent successfully.");
+    // }
 }

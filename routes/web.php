@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get("/index",[EmailController::class,"index"])->name("index");
+Route::get("/",[EmailController::class,"index"])->name("index");
